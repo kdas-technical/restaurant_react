@@ -8,7 +8,7 @@ function App() {
     <>
      
       
-      <h1 className='text-center text-6xl bg-emerald-600 text-orange-600 py-4'>Vite + React</h1>
+      <h1 className='text-center text-6xl bg-emerald-800 text-orange-600 py-4'>Vite + React</h1>
   
     </>
   )
