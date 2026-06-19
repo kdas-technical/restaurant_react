@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 function Navbar() {
   return (
-    
+    <header className={`fixed top-0 left-0 right-0 z-50 transition duration-300 ease-in-out`}>
      <nav className='container bg-transparent max-w-screen-2xl flex justify-around items-center px-4 py-4 mx-auto'>
     
      {/*logo*/}
@@ -12,7 +12,7 @@ function Navbar() {
      </div>
      
     {/*menu*/}
-     <div className='menu flex justify-between items-center gap-12 text-2xl'>
+     <div className='menu flex justify-between items-center gap-12 text-2xl text-white'>
       <NavLink to={"/"}> Home </NavLink>
       <NavLink to={"/about"}> About </NavLink>
       <NavLink to={"/contact"}> Contact </NavLink>
@@ -23,7 +23,7 @@ function Navbar() {
       <button className='bg-purple-600 text-white rounded-lg items-center px-4 py-2'> Sign In </button>
      </div> 
      </nav>
-
+     </header>
   )
 }
 

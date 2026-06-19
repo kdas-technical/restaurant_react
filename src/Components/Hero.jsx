@@ -2,9 +2,8 @@ import React from 'react'
 import bannerImg from "../../src/assets/hero.jpg"
 function Hero() {
   return (
-<div 
-    className='relative  h-screen bg-cover bg-center text-gray-50 bg-[image:var(--banner-image)]' 
-    style={{ '--banner-image': `url(${bannerImg})` }} >
+<div className='relative  h-screen bg-cover bg-center text-gray-50'
+    style={{ 'backgroundImage': `url(${bannerImg})` }} >
     <div className="container bg-transparent absolute top-60 mx-auto px-6 "> {/* Centered container with horizontal padding */}
         <h1 className="text-5xl font-bold text-pink-500 my-6 text-center">
           Launch Your Product with a Cool Landing Page
