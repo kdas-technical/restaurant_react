@@ -1,17 +1,18 @@
-import { BrowserRouter ,Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import Navbar from './Components/Navbar'
 import Home from './Pages/Home'
 import About from './Pages/About'
 import Menu from './Pages/Menu'
 import Contact from './Pages/Contact'
 import Footer from './Components/Footer'
-import Navbar from './Components/Navbar'
+
 function App() {
 
 
   return (
     <>
-      <BrowserRouter>
+      
       <Navbar/>
      {/*Routes*/}
      <Routes>
@@ -23,7 +24,7 @@ function App() {
      
     
      <Footer/>
-     </BrowserRouter>
+    
     </>
   )
 }
