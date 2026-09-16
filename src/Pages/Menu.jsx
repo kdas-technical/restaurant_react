@@ -1,8 +1,10 @@
 import React from 'react'
 import bannerImg from "../../src/assets/hero.jpg"
-
-function About() {
+import Dishes from '../Components/Dishes'
+import PremMenu from '../Components/PremMenu'
+const Menu = () => {
   return (
+    <>
     <section className='min-h-screen'>
     <div className='bg-transparent w-full h-[400px] relative bg-cover bg-center text-gray-50 bg-[image:var(--banner-image)]' 
     style={{'--banner-image': `url(${bannerImg})`}} >
@@ -14,7 +16,10 @@ function About() {
         </p>
     </div>
     </section>
+    <Dishes/>
+    <PremMenu/>
+    </>
   )
 }
 
-export default About
+export default Menu
